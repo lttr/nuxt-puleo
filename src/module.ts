@@ -1,4 +1,4 @@
-import { defineNuxtModule, createResolver } from "@nuxt/kit"
+import { defineNuxtModule, installModule } from "@nuxt/kit"
 
 // Module options TypeScript interface definition
 // export interface ModuleOptions {}
@@ -10,8 +10,10 @@ export default defineNuxtModule({
   },
   // Default configuration options of the Nuxt module
   defaults: {},
-  setup(_options, _nuxt) {
-    const resolver = createResolver(import.meta.url)
+  async setup(_options, _nuxt) {
+    await installModule("@lttr/nuxt-config-postcss", {
+      filesWithGlobals: ["./node_modules/@lttr/puleo/output/media.css"],
+    })
 
     _nuxt.options.css.push("@lttr/puleo")
   },

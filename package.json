@@ -1,9 +1,10 @@
 {
   "name": "nuxt-puleo",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Integrate Puleo into Nuxt",
-  "repository": "lttr/nuxt-puleo",
+  "repository": "github:lttr/nuxt-puleo",
   "license": "MIT",
+  "author": "Lukas Trumm",
   "type": "module",
   "exports": {
     ".": {

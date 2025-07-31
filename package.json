@@ -1,6 +1,6 @@
 {
   "name": "@lttr/nuxt-puleo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Integrate Puleo into Nuxt",
   "repository": {
     "type": "git",

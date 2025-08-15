@@ -15,6 +15,6 @@ export default defineNuxtModule({
       filesWithGlobals: ["./node_modules/@lttr/puleo/output/media.css"],
     })
 
-    _nuxt.options.css.push("@lttr/puleo")
+    _nuxt.options.css.unshift("@lttr/puleo")
   },
 })
